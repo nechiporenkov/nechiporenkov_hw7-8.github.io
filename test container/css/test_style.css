@@ -1,0 +1,316 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'League Gothic';
+    src: url('../fonts/league_gothic-webfont.eot');
+    src: url('../fonts/league_gothic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/league_gothic-webfont.woff2') format('woff2'),
+         url('../fonts/league_gothic-webfont.woff') format('woff'),
+         url('../fonts/league_gothic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/opensans-regular-webfont.eot');
+    src: url('../fonts/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans-regular-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-regular-webfont.woff') format('woff'),
+         url('../fonts/opensans-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/opensans-light-webfont.eot');
+    src: url('../fonts/opensans-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans-light-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-light-webfont.woff') format('woff'),
+         url('../fonts/opensans-light-webfont.ttf') format('truetype');
+    font-weight: lighter;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/opensans-extrabold-webfont.eot');
+    src: url('../fonts/opensans-extrabold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans-extrabold-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-extrabold-webfont.woff') format('woff'),
+         url('../fonts/opensans-extrabold-webfont.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+.bc {
+    max-width: 2400px;
+    /*height: 100px;*/
+    padding: 20px 0;
+}
+
+.content-box {
+    max-width: 960px;
+    margin: 0 auto;
+    /*padding: 10px;*/
+
+    border: 1px solid red;
+    box-sizing: border-box;
+}
+
+.bc-top {
+    height: 846px;
+    padding-top: 64px;
+
+    background-image: url(../img/bc_header.jpg);
+    background-position: center 0;
+    background-repeat: no-repeat;
+}
+
+.bc-slider {
+    height: 400px;
+
+    background: rgba(0, 0, 0, 0.3);
+    background-position: center 0;
+    background-repeat: no-repeat;
+}
+
+.bc-about-us {
+    height: 342px;
+
+    background-image: url(../img/bc_about_us.png);
+    background-repeat: repeat-x;
+}
+
+.bc-main {
+    background-color: #f9f9f9;
+}
+
+.bc-line_top {
+    height: 2px;
+    padding: 0;
+
+    background-image: url(../img/bc_line_top.png);
+    background-repeat: repeat-x;
+}
+
+.bc-logos {
+    background-color: #f9f9f9;
+}
+
+.bc-line_bottom {
+    height: 2px;
+    padding: 0;
+
+    background-image: url(../img/bc_line_bottom.png);
+    background-repeat: repeat-x;
+}
+
+.bc-news {
+    background-color: #ececec;
+}
+
+.bc-footer {
+    height: 114px;
+
+    background-image: url(../img/bc_footer.jpg);
+    background-position: center 0;
+    background-repeat: no-repeat;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'League Gothic';
+}
+
+li {
+    list-style: none;
+}
+
+h2 {
+    font: 30px 'League Gothic';
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px #000;
+}
+/* ---------------------TOP: --------------------- */
+
+.content-box__top {
+    padding: 0;
+    text-align: right;
+    margin-bottom: 166px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    display: block;
+    width: 157px;
+    float: left;
+    font: 48px 'League Gothic';
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px #000;
+}
+
+.logo_top::after {
+    content: "er";
+    color: transparent;
+    background: -webkit-gradient(linear, left bottom,left top,color-stop(0.1, #000),color-stop(0.7, #745083));, black;
+    -webkit-background-clip: text;
+    text-shadow: none;
+}
+
+.menu {
+    width: 634px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu__item {
+    /*margin-left: 4%;
+    margin-right: 3px;*/
+
+    line-height: 59px;
+    display: inline-block;
+}    /* HACK: вернуть если не подойдет FLEX  */
+
+.menu__item:first-child {
+    /*margin-left: 0;*/
+}    /* HACK: вернуть если не подойдет FLEX  */
+
+.menu__item:last-child {
+    /*margin-right: 0;*/
+}    /* HACK: вернуть если не подойдет FLEX  */
+
+.menu__link {
+    padding: 0 6px;
+
+    color: #fff;
+    text-transform: uppercase;
+    font: 24px 'League Gothic';
+    text-shadow: 1px 1px 1px #000;
+}
+
+.menu__link:hover {
+    border-bottom: 2px solid #edbfff;
+}
+
+/* -------------------- SLIDER: -------------------- */
+
+.slider-box {
+    padding-top: 57px;
+
+    position: relative;
+}
+
+.slider__content {
+    display: inline-block;
+    width: 57%;
+    max-width: 550px;
+}
+
+.slider__h1 {
+    margin: 0;
+
+    text-transform: capitalize;
+    font: 60px 'League Gothic';
+    color: #fefefe;
+    text-shadow: 1px 1px 1px #000;
+}
+
+.slider__h2 {
+    margin: 0;
+
+    font: 32px 'League Gothic';
+    color: #edbfff;
+    text-shadow: 1px 1px 1px #000;
+}
+
+.slider__text {
+    font: 18px 'Open Sans';
+    font-weight: lighter;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+}
+
+.slider__img {
+    position: absolute;
+    top: -43px;
+    left: 64%;
+}
+
+/* ______________________ ABOUT_US: ______________________ */
+
+.about-us-box {
+    padding: 58px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-us__content {
+    max-width: 228px;
+    position: relative;
+}
+
+.about-us__content:first-child {
+    margin-left: 42px;
+}
+
+.about-us__h2 {
+    color: #fff;
+    margin-bottom: 11px;
+}
+
+.about-us__icon {
+    width: 27px;
+    height: 27px;
+    background-image: url(../img/sprite_about_us.png);
+    position: absolute;
+    top: 8px;
+    left: -44px;
+}
+
+.about-us__content:nth-child(2) .about-us__icon {
+    background-position: -29px 0;
+}
+
+.about-us__content:last-child .about-us__icon {
+    background-position: -56px 0;
+}
+
+.about-us__text {
+    margin-bottom: 25px;
+    font: 16px 'Open Sans';
+    font-weight: lighter;
+    color: #fff;
+    text-shadow: 0px 0px 16px #000;
+}
+
+.about-us__wrapper__link {
+    text-align: right;
+}
+
+.about-us__link {
+    font-size: 16px;
+    color: #fff;
+}
+
+.about-us__link:hover {
+    text-shadow: 0 0 7px #fff;
+}
+
+/* _________________________ BLOG: _________________________ */
+
+.blog-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog-box__left,
+.blog-box__right {
+    border: 1px solid green;
+    width: 50%;
+}
