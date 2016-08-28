@@ -1,0 +1,181 @@
+@font-face {
+    font-family: 'League Gothic';
+    src: url('../fonts/league_gothic-webfont.eot');
+    src: url('../fonts/league_gothic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/league_gothic-webfont.woff2') format('woff2'),
+         url('../fonts/league_gothic-webfont.woff') format('woff'),
+         url('../fonts/league_gothic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/opensans-regular-webfont.eot');
+    src: url('../fonts/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans-regular-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-regular-webfont.woff') format('woff'),
+         url('../fonts/opensans-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/opensans-light-webfont.eot');
+    src: url('../fonts/opensans-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans-light-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-light-webfont.woff') format('woff'),
+         url('../fonts/opensans-light-webfont.ttf') format('truetype');
+    font-weight: lighter;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/opensans-extrabold-webfont.eot');
+    src: url('../fonts/opensans-extrabold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans-extrabold-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-extrabold-webfont.woff') format('woff'),
+         url('../fonts/opensans-extrabold-webfont.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+.bc {
+    max-width: 2400px;
+    padding: 20px 0;
+}
+
+.content-box {
+    max-width: 973px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.logo {
+    display: block;
+    font: 48px 'League Gothic';
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px #000;
+}
+
+.logo_top::after {
+    content: "er";
+    color: transparent;
+    background: -webkit-gradient(linear, left bottom,left top,color-stop(0.1, #000),color-stop(0.7, #745083));, black;
+    -webkit-background-clip: text;
+    text-shadow: none;
+}
+
+.menu__link {
+    padding: 0 6px;
+    color: #fff;
+    text-transform: uppercase;
+    font: 24px 'League Gothic';
+    text-shadow: 1px 1px 1px #000;
+}
+
+.menu__link:hover {
+    border-bottom: 2px solid #edbfff;
+}
+
+.bc-top {
+    height: 846px;
+    padding-top: 64px;
+    background-image: url(../img/bc_header.jpg);
+    background-position: center 0;
+    background-repeat: no-repeat;
+}
+
+.bc-slider {
+    height: 400px;
+    padding: 71px 10px 0 10px;
+    background: rgba(0, 0, 0, 0.3);
+    background-position: center 0;
+    background-repeat: no-repeat;
+}
+
+.slider__play {
+    width: 52px;
+    height: 52px;
+    background: none;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    position: absolute;
+    top: 21px;
+    left: 137px;
+}
+
+.slider__play:hover {
+    background: url(../img/Play.png) no-repeat;
+}
+
+.bc-about-us {
+    height: 342px;
+    background-image: url(../img/bc_about_us.png);
+    background-repeat: repeat-x;
+}
+
+.bc-main {
+    background-color: #f9f9f9;
+}
+
+.bc-line_top {
+    height: 2px;
+    padding: 0;
+    background-image: url(../img/bc_line_top.png);
+    background-repeat: repeat-x;
+}
+
+.bc-logos {
+    background-color: #f9f9f9;
+}
+
+.bc-line_bottom {
+    height: 2px;
+    padding: 0;
+
+    background-image: url(../img/bc_line_bottom.png);
+    background-repeat: repeat-x;
+}
+
+.bc-footer__news {
+    background-color: #ececec;
+}
+
+.bc-footer__menu {
+    height: 114px;
+    background-image: url(../img/bc_footer.jpg);
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'League Gothic';
+}
+
+li {
+    list-style: none;
+}
+
+h1 {
+    font-family: 'League Gothic';
+    text-transform: uppercase;
+    letter-spacing: -0.005em;
+    text-shadow: 1px 1px 1px #000;
+    color: #fff;
+}
+
+h2 {
+    font-family: 'League Gothic';
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px #000;
+}
+
+p {
+    font-family: 'Open Sans';
+    font-weight: lighter;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    letter-spacing: -0.003em;
+}
