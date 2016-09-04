@@ -91,8 +91,8 @@
 }
 
 .bc-footer__menu {
-    height: 114px;
-    background-image: url(../img/bc_footer.jpg);
+    height: 200px;
+    background-image: url(../img/bc_footer768.jpg);
 }
 
 /* ---------------------ELEMENTS:---------------------  */
@@ -138,15 +138,12 @@ p {
     color: #454545;
     text-shadow: 1px 1px 1px #000;
     letter-spacing: -0.004em;
-    word-wrap: break-word;
-    word-break: break-all;
     margin: 0;
 }
 
 ul {
     margin: 0;
-    display: inline-flex;
-    justify-content: space-between;
+    padding: 0;
 }
 
 /* ---------------CONTAINER CONTENT:---------------  */
@@ -159,9 +156,6 @@ ul {
 /* ----------------------LOGO: ---------------------- */
 
 .logo {
-    display: block;
-    font-family: 'League Gothic';
-    text-transform: uppercase;
     text-shadow: 1px 1px 1px #000;
 }
 
@@ -177,7 +171,7 @@ ul {
 
 .menu__link {
     padding: 0 6px;
-    font-size: 24px;
+    font-size: 22px;
     text-shadow: 1px 1px 1px #000;
 }
 
@@ -195,7 +189,8 @@ ul {
     border: 1px solid #fff;
     position: absolute;
 }
+/* ------------------------ ABOUT US LINK:HOVER ------------------------ */
 
-.slider__play:hover {
-    background: url(../img/Play.png) no-repeat;
+a.about-us__link:hover {
+    text-shadow: 0 0 7px #fff;
 }

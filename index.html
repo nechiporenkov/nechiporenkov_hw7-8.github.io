@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="css/normalise.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/normalise.css" media="screen" title="no title">
     <link rel="stylesheet" href="css/all_style.css">
-    <link rel="stylesheet" media="screen and (min-width: 769px)" href="css/style960.css">
-    <link rel="stylesheet" media="screen and (min-width: 481px) and (max-width: 768px)" href="css/style768.css">
-    <link rel="stylesheet" media="screen and (min-width: 321px) and (max-width: 480px)" href="css/style480.css">
-    <link rel="stylesheet" media="screen and (max-width: 320px)" href="css/style320.css">
+    <link rel="stylesheet" media="screen and (min-width: 960px)" href="css/style960.css">
+    <link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 959px)" href="css/style768.css">
+    <link rel="stylesheet" media="screen and (min-width: 480px) and (max-width: 767px)" href="css/style480.css">
+    <link rel="stylesheet" media="screen and (min-width: 320px) and (max-width: 479px)" href="css/style320.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -19,18 +19,20 @@
         <section class="content-box content-box__top">
             <a href="#" class="logo logo__top">pingbull</a>
 
-            <ul class="menu">
-                <li class="menu__item menu__item__first"><a href="#" class="menu__link">home</a></li>
-                <li class="menu__item"><a href="#" class="menu__link">about</a></li>
-                <li class="menu__item"><a href="#" class="menu__link">blog</a></li>
-                <li class="menu__item"><a href="#" class="menu__link">products</a></li>
-                <li class="menu__item"><a href="#" class="menu__link">lorem ipsum</a></li>
-                <li class="menu__item"><a href="#" class="menu__link">dolor sit amet</a></li>
-            </ul>
+            <div class="wrapper-menu">
+                <ul class="menu">
+                    <li class="menu__item menu__item__first"><a href="#" class="menu__link">home</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">about</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">blog</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">products</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">lorem ipsum</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">dolor sit amet</a></li>
+                </ul>
+            </div>
         </section>
 
         <div class="bc bc__slider">
-            <section class="content-box content-box__slider">
+            <div class="content-box content-box__slider">
                 <article class="slider__content">
                     <h1 class="slider__h1">Lorem ipsum dolor</h1>
                     <h2 class="slider__h2">IT WILL MAKE ALL OF YOUR DREAMS COME TRUE</h2>
@@ -41,7 +43,7 @@
                     <img src="img/iphone.png" alt="iphone" class="slider__img">
                     <a href="#" class="slider__play"></a>
                 </article>
-            </section>
+            </div>
         </div>
     </div>
 
@@ -63,7 +65,7 @@
                 <h2 class="about-us__h2">about our company</h2>
                 <div class="about-us__icon"></div>
                 <p class="about-us__text">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam </p>
-                <div class="about-us__wrapper__link"><a href="#" class="about-us__link">read more</a></div></article>
+                <a href="#" class="about-us__link">read more</a></article>
         </section>
     </div>
 
@@ -98,7 +100,8 @@
                     <p class="post__text">Posted by Admin on March 13 2012 in Blog Updates</p>
                 </div>
 
-                <div class="wrapper__link"><a href="#" class="blog-box__right__link">read more here</a></div>
+                <a href="#" class="blog-box__right__link__read">read more here</a>
+                <a href="#" class="blog-box__right__link__more">more blog posts</a>
             </article>
         </section>
     </div>
@@ -129,6 +132,16 @@
 
                 <article class="box-news__article box-news__comments">
                     <a href="#"><h2 class="box-news__comments__h2">RECENT COMMENTS</h2></a>
+                    <p class="box-news__text">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar bibendum in, venenatis quis</p>
+                </article>
+
+                <article class="box-news__article box-news__categories">
+                    <a href="#"><h2 class="box-news__categories__h2">NEWS CATEGORIES</h2></a>
+                    <p class="box-news__text">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar bibendum in, venenatis quis</p>
+                </article>
+
+                <article class="box-news__article box-news__categories">
+                    <a href="#"><h2 class="box-news__categories__h2">NEWS CATEGORIES</h2></a>
                     <p class="box-news__text">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar bibendum in, venenatis quis</p>
                 </article>
 
